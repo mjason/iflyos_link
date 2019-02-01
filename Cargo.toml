@@ -1,0 +1,14 @@
+[package]
+name = "iflyos_link"
+version = "0.1.0"
+authors = ["mj <tywf91@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+wpactrl = "0.3.1"
+clap = "2.32.0"
+
+[profile.release]
+lto = true
+opt-level = "s"
+panic = "abort"
